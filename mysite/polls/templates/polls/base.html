@@ -1,0 +1,20 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+    <link rel="stylesheet" type="text/css" href="{{% static 'polls/style.css' %}" />
+</head>
+<body>
+
+<p>Header</p>
+<hr>
+{% block main_content %}
+{% endblock %}S
+{% include "polls/footer.html" %}
+
+</body>
+</html>
